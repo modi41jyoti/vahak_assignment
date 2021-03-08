@@ -59,7 +59,7 @@ const FormComponent = (props) => {
                 }
             </Grid >
             <Grid container>
-                <Button text='Bid Now' style={{ backgroundColor: isFeildNotEmpty ? '#EDF0F7' : 'blue', color: '#2355FC', opacity: '60%', width: '100%', marginBottom: '30px', marginTop: '30px' }} />
+                <Button text='Bid Now' style={{ backgroundColor: isFeildNotEmpty ? '#EDF0F7' : 'blue', color: isFeildNotEmpty ? '#2355FC' : 'black', opacity: '60%', width: '100%', marginBottom: '30px', marginTop: '30px' }} />
             </Grid>
         </>
     )
