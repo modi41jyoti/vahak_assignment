@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Card } from '@material-ui/core';
+import { Card } from '@material-ui/core';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
@@ -25,9 +25,9 @@ export default function CardComponent(props) {
             <CardActions>
                 <ul style={{ listStyleType: 'none', padding: '0 0 0 10px', }}>
 
-                    <li style={{ marginBottom: '10px' }}><img src={Group} style={{ marginRight: '14px' }}></img>Specification 01</li>
-                    <li style={{ marginBottom: '10px' }}><img src={Path} style={{ marginRight: '10px' }}></img>Specification 02</li>
-                    <li style={{ marginBottom: '10px' }}><img src={payment} style={{ marginRight: '12px' }}></img>Specification 03</li>
+                    <li style={{ marginBottom: '10px' }}><img src={Group} alt='spec01' style={{ marginRight: '14px' }}></img>Specification 01</li>
+                    <li style={{ marginBottom: '10px' }}><img src={Path} alt='spec02' style={{ marginRight: '10px' }}></img>Specification 02</li>
+                    <li style={{ marginBottom: '10px' }}><img src={payment} alt='spec03' style={{ marginRight: '12px' }}></img>Specification 03</li>
                 </ul>
             </CardActions >
 
