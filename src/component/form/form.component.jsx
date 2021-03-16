@@ -24,7 +24,7 @@ const FormComponent = (props) => {
                         value={amount}
                         onChange={handleChange}
                         style={{
-                            fontSize: '40px', border: 'none', width: 'auto', opacity: amount === 0 ? 0.5 : 1,
+                            fontSize: '40px', border: 'none', opacity: amount === 0 ? 0.5 : 1,
                             display: 'flex',
                             width: '16%'
                         }}
