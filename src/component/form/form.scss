@@ -1,0 +1,36 @@
+
+    .oldCar {
+     text-align: center;
+    }
+    .underBar {
+        width: 70px;
+        height: 5px;
+        background: blue;
+        border-radius: 4px;
+        justify-content: center;
+
+    }
+    .formWrapper {
+        justify-content: center;
+        border: 0.6px solid grey;
+        margin: 22px;
+        border-Radius: 4
+
+
+    }
+    .heading {
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+
+.headingWrapper, .amountWrapper, .buttonWrapper{
+    justify-content: center !important;
+    display: flex;
+}
+
+.amountWrapper{
+    margin-bottom: 20px;
+    padding-left: 60px;
+}
+
+

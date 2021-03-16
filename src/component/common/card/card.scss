@@ -1,9 +1,14 @@
 .post{
     opacity: 0.5;
-     font-size: 15px
+     font-size: 15px;
+     padding-top: 0px;
+     margin: 0;
+     padding-bottom: 22px;
 }
 .hondaCity{
-    font-weight: bold !important
+    font-weight: bold !important;
+    padding-top: 20px;
+    margin-bottom: 5px;
 }
 
 .cardActionUI{
@@ -13,4 +18,72 @@
 
 .cardActionLI{
     margin-bottom: 10px
+}
+
+.root {
+    min-width: 90%;
+    justify-content: center
+}
+.bullet {
+    display: inline-block;  
+      margin: 0 2px;
+    transform: scale(0.8),
+}
+.title {
+    font-size: 14,
+}
+.pos {
+    margin-bottom: 12,
+}
+.cardContent {
+    background-color: #202942;
+    text-align: center;
+    color: white;
+    border-radius: 7px 7px 0 0;
+}
+.moreDetail {
+    background-color: #2355FC0F;
+    text-align: center;
+    padding: 5px 0;
+    color: 'blue';
+    font-size: '12px';
+    letter-spacing: 1
+
+}
+
+.textPara {
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.borderBox{
+    box-shadow: 1px 1px 10px 0px;
+}
+
+.memberDetailsWrapper{
+    display: inline-block;
+}
+
+.memberDetailsWrapper div{
+    display: inline-block;
+}
+
+.moreDetailsWrapperPlace{
+    opacity: 0.5;
+}
+
+.specification{
+    margin-bottom: 10px
+}
+
+.specification1{
+    margin-right: 24px
+}
+
+.specification2{
+    margin-right: 20px
+}
+
+.specification3{
+    margin-right: 22px
 }

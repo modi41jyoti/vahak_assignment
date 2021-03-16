@@ -1,11 +1,4 @@
 import React from 'react';
-import { Card } from '@material-ui/core';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import useStyles from './card.style'
-import CardHeader from '@material-ui/core/CardHeader';
-import Avatar from '@material-ui/core/Avatar';
 import payment from '../../../assets/payment.svg';
 import Path from '../../../assets/Path 25988.svg';
 import Group from '../../../assets/Group 15945.svg';
@@ -14,39 +7,48 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './card.scss'
 
 export default function CardComponent(props) {
-    const classes = useStyles();
     const { handelDetail, isDetailClicked } = props
     return (
-        <Card className={classes.root}>
-            <CardContent className={classes.cardContent}>
-                <Typography className='hondaCity'>Honda City</Typography>
-                <Typography className='post'>Posted at 1 Nov, 9.30 AM</Typography>
-            </CardContent>
-            <CardActions>
-                <ul style={{ listStyleType: 'none', padding: '0 0 0 10px', }}>
+        <div className='root'>
 
-                    <li style={{ marginBottom: '10px' }}><img src={Group} alt='spec01' style={{ marginRight: '14px' }}></img>Specification 01</li>
-                    <li style={{ marginBottom: '10px' }}><img src={Path} alt='spec02' style={{ marginRight: '10px' }}></img>Specification 02</li>
-                    <li style={{ marginBottom: '10px' }}><img src={payment} alt='spec03' style={{ marginRight: '12px' }}></img>Specification 03</li>
-                </ul>
-            </CardActions >
+            <div className='borderBox' >
+                <div className='cardContent'>
+                    <h3 className='hondaCity'>Honda City</h3>
+                    <h6 className='post'>Posted at 1 Nov, 9.30 AM</h6>
+                </div>
+                <div >
 
-            {isDetailClicked ?
-                <>
-                    {/* <Typography>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolorum optio a distinctio nesciunt dolores ullam doloremque sit itaque aliquam odit, temporibus repellat veniam inventore facere aperiam assumenda recusandae perferendis.</Typography> */}
-                    <Typography className={classes.moreDetail} onClick={handelDetail}>Hide Details <ExpandLessIcon /></Typography>
-                </>
+                    <ul style={{ listStyleType: 'none', padding: '0 0 0 20px', }}>
 
-                : <Typography className={classes.moreDetail} onClick={handelDetail}>More Details <ExpandMoreIcon /></Typography>}
-            <CardHeader
-                avatar={
-                    <Avatar aria-label="recipe" className={classes.avatar} >
-                        R
-                    </Avatar>
+                        <li className='specification'><img src={Group} alt='spec01' className='specification1'></img>Specification 01</li>
+                        <li className='specification'><img src={Path} alt='spec02' className='specification2'></img>Specification 02</li>
+                        <li className='specification'><img src={payment} alt='spec03' className='specification3'></img>Specification 03</li>
+                    </ul>
+                </div >
+
+                {
+                    isDetailClicked ?
+                        <>
+                            <h5 className='textPara'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolorum optio a distinctio nesciunt dolores ullam doloremque sit itaque aliquam odit, temporibus repellat veniam inventore facere aperiam assumenda recusandae perferendis.</h5>
+                            <h4 className='moreDetail' onClick={handelDetail}><span style={{ color: 'blue' }}>Hide Details</span>
+                                <ExpandLessIcon />
+                            </h4>
+
+                        </>
+
+                        : <h4 className='moreDetail' onClick={handelDetail}> <span style={{ color: 'blue' }}> More Details</span><ExpandMoreIcon /></h4>
                 }
-                title="Rohan Sharma"
-                subheader="Bengaluru, Karnataka"
-            />
-        </Card >
+                <div className='memberDetailsWrapper'>
+
+                    <img src="img_avatar2.png" alt="Avatar" />
+
+                    <div>
+                        <h3>Rohan Sharma</h3>
+                        <p className='moreDetailsWrapperPlace'>Bengaluru, Karnataka</p>
+                    </div>
+
+                </div>
+            </div>
+        </div >
     );
 }

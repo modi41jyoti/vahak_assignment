@@ -30,7 +30,6 @@ const Form = () => {
     const handleForm = (e) => {
         let inputName = e.target.name
         setValue({ ...value, [inputName]: e.target.value })
-        // console.log(value)
     }
     return <FormComponent handleChange={handleChange} amount={amount} handleForm={handleForm} isFeildNotEmpty={isFeildNotEmpty} />
 }

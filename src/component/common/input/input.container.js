@@ -1,17 +1,11 @@
 import React from "react";
-import { TextField } from "@material-ui/core";
 
 export default function CustomInput(props) {
-  const { name, label, value, error = null, onChange, ...other } = props;
+  const { name, label, value, onChange, style } = props;
   return (
-    <TextField
-      variant="outlined"
-      label={label}
-      name={name}
-      value={value}
-      onChange={onChange}
-      {...other}
-      {...(error && { error: true, helperText: error })}
-    />
+    <div style={{ display: 'flex' }}>
+      <input type="text" placeholder={label} name={name} value={value} onChange={onChange} style={style} />
+    </div >
+
   );
 }
